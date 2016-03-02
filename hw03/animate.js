@@ -28,10 +28,6 @@ var logo_width = 90;
 var logo_height = 60;
 var logo_x = c.width / 2 - logo_width / 2;
 var logo_y = c.height / 2 - logo.height / 2;
-var logo_left = logo_x - logo_width / 2;
-var logo_right = logo_x + logo_width / 2;
-var logo_top = logo_y - logo_height / 2;
-var logo_bot = logo_y + logo_height / 2;
 var logo_vx = 2;
 var logo_vy = 2;
 
