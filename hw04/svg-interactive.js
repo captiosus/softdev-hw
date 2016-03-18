@@ -55,36 +55,36 @@ var drawCircle = function() {
 };
 
 function drawDvd() {
-  var dvd = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+  var dvd = document.createElementNS("http://www.w3.org/2000/svg", "image");
   logo_right = logo_x + 30;
   logo_bot = logo_y + 30;
   logo_vx = 2;
-  logo_vy = 2;
+  logo_vy = 2.5;
   var logo_x = pic.offsetWidth / 2;
   var logo_y = pic.offsetHeight / 2;
-  dvd.setAttribute( "cx", logo_x );
-  dvd.setAttribute( "cy",  logo_y );
-  dvd.setAttribute( "fill", "black" );
-  dvd.setAttribute( "stroke", "black" );
-  dvd.setAttribute( "r", 30 );
+  dvd.setAttributeNS("http://www.w3.org/1999/xlink", "href", "logo_dvd.jpg");
+  dvd.setAttribute( "x", logo_x );
+  dvd.setAttribute( "y",  logo_y );
+  dvd.setAttribute( "height", 70 );
+  dvd.setAttribute( "width", 70 );
   pic.appendChild(dvd);
   var animateCode = function() {
-    if (logo_x + logo_vx < 30) {
+    if (logo_x + logo_vx < 0) {
       logo_vx *= -1;
     }
-    if (dvd.getAttribute("cx") > 470) {
+    if (dvd.getAttribute("x") > 465) {
       logo_vx *= -1;
     }
-    if (logo_y + logo_vy < 30) {
+    if (logo_y + logo_vy < 0) {
       logo_vy *= -1;
     }
-    if (dvd.getAttribute("cy") > 470) {
+    if (dvd.getAttribute("y") > 465) {
       logo_vy *= -1;
     }
     logo_x += logo_vx;
     logo_y += logo_vy;
-    dvd.setAttribute( "cx", logo_x );
-    dvd.setAttribute( "cy",  logo_y );
+    dvd.setAttribute( "x", logo_x );
+    dvd.setAttribute( "y",  logo_y );
     dvdID = window.requestAnimationFrame(animateCode);
   };
   animateCode();
