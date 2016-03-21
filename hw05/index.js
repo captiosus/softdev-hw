@@ -4,7 +4,7 @@ var states = {"Alabama": 53, "Alaska": 16, "Arizona": 75, "Arkansas" : 32, "Cali
 "Oregon": 61, "Pennsylvania": 189, "Rhode Island": 24, "South Carolina": 53, "South Dakota": 20, "Tennessee": 67, "Texas": 222, "Utah": 33, "Vermont": 16, "Virginia": 95, "Washington": 101, "West Virginia": 29,
 "Wisconsin": 86, "Wyoming": 14};
 
-var allocated = ["Texas", "Florida", "Ohio", "Illinois", "Georgia", "Michigan", "Virginia", "Virginia", "North Carolina", "Massachusetts", "Alabama", " Tennessee", "South Carolina", "Louisiana", "Missouri", "Minnesota", "Colorado", "Iowa", "Arkansas",
+var allotted = ["Texas", "Florida", "Ohio", "Illinois", "Georgia", "Michigan", "Virginia", "Virginia", "North Carolina", "Massachusetts", "Alabama", " Tennessee", "South Carolina", "Louisiana", "Missouri", "Minnesota", "Colorado", "Iowa", "Arkansas",
 "Nevada", "Oklahoma", "Nebraska", "Kansas", "Maine", "New Hampshire"];
 
 var delegates = d3.values(states);
@@ -22,7 +22,7 @@ d3.select(".chart")
           return foo(states[d]) + "px";})
     .text(function(d) { return d + ": " +  states[d]; })
     .style("background-color", function(d) {
-          if (allocated.indexOf(d) === -1) {
+          if (allotted.indexOf(d) === -1) {
             return "lightgray";
           } else {
             return "lightblue";
