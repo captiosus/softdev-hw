@@ -1,0 +1,34 @@
+body {
+  background-color: white;
+}
+.chart div{
+  font: 15px sans-serif;
+  color: black;
+  margin: 1px;
+  text-align: right;
+  padding: 3px;
+  white-space: nowrap;
+}
+.chart {
+  background-color: white;
+}
+.allocated {
+  height: 50px;
+  width: 50px;
+  background-color: lightblue;
+  display: inline-block;
+}
+.unallocated {
+  height: 50px;
+  width: 50px;
+  background-color: lightgray;
+  display: inline-block;
+}
+.key {
+  margin-bottom: 30px;
+  border: 1px solid black;
+  width: 265px;
+}
+.key h2 {
+  text-align: center;
+}
