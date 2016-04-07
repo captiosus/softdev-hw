@@ -26,7 +26,12 @@ SYMBOLS=".?!&#,;:-_*"
 # else:
 #     print "fail"
 
-check = [ 3 if x in UC_LETTERS else 2 if x in LC_LETTERS else 1 if x in NUMBERS else 4 if x in SYMBOLS else 0 for x in p ]
+check = [ 3 if x in UC_LETTERS else
+            2 if x in LC_LETTERS else
+            1 if x in NUMBERS else
+            4 if x in SYMBOLS else
+            0 for x in p ]
+            
 if 1 in check and 2 in check and 3 in check and 4 in check:
     print "Your score is: " + ("10" if sum(check) > 50 else str(sum(check)/5))
 else:
