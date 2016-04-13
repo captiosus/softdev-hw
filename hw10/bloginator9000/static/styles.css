@@ -1,0 +1,266 @@
+.contain {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+.navbar {
+  background: transparent;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  color: black !important;
+}
+
+.navbar-header {
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: -15px !important;
+}
+
+.navlink {
+  padding-bottom: 10px;
+  padding-top: 5px !important
+}
+
+.link-border {
+  border-right: 1px solid lightgray;
+}
+
+.nav li {
+  height: 30px;
+}
+
+.nav {
+  padding-top: 10px;
+}
+
+.blog-title {
+  font-weight: normal;
+  color: black;
+  font-size: 28px;
+}
+
+.blog-post {
+  margin-right: auto;
+  margin-left: auto;
+  height: 300px;
+}
+
+.see-more {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid gray;
+  height: 30px;
+  padding-top: 4px;
+}
+
+.see-more a {
+  color: gray;
+  text-decoration: none;
+}
+
+.see-more-contain {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}
+
+.blog-picture {
+  padding-top: 10px;
+}
+
+.blog-text {
+  margin-top: 20px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  min-height: 100px;
+  max-height: 150px;
+  overflow: hidden;
+}
+
+.login {
+  width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 60px 40px 60px;
+  margin-top: 30px;
+  border: 1px solid gray;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.login-form input {
+  display: block;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 35px;
+  border: 1px solid gray;
+  padding-left: 5px;
+}
+
+.login-form input:focus {
+  outline: none;
+}
+
+.login-form button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  margin-top: 20px;
+  border: 1px solid gray;
+  width: 100px;
+  height: 35px;
+  font-size: 16px;
+}
+
+.login-form p {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.error-message {
+  font-size: 14px;
+  color: red;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.hrline {
+  margin-bottom: 40px;
+}
+
+.post-text {
+  padding-top: 30px;
+  font-size: 16px;
+}
+
+.comment-text {
+  resize: none;
+  overflow: hidden;
+  min-height: 80px;
+  min-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 5px;
+}
+
+.comment-text:focus {
+  outline: none;
+}
+
+.comment-title {
+  margin-bottom: 20px;
+  font-weight: normal;
+  color: black;
+  font-size: 24px;
+}
+
+.comment-submit {
+  margin-top: 20px;
+  width: 80px;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid gray;
+  height: 35px;
+  padding-top: 4px;
+  float: right;
+}
+
+.comment-block {
+  height: auto;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.comment-section {
+  margin-top: 40px;
+}
+
+.comment-row {
+  margin-top: 10px;
+}
+
+.comment-user {
+  color: black;
+}
+
+.makepost-title {
+  text-align: center;
+}
+
+.makeform-form input {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 300px;
+  height: 35px;
+  border: 1px solid gray;
+  padding-left: 5px;
+}
+
+.makeform-form input:focus {
+  outline: none;
+}
+
+.makeform-form textarea {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  resize: none;
+  min-height: 250px;
+  width: 450px;
+  border: 1px solid gray;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.makeform-form textarea:focus {
+  outline: none;
+}
+
+.makeform-form p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.makeform-form button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  margin-top: 20px;
+  border: 1px solid gray;
+  width: 100px;
+  height: 35px;
+  font-size: 16px;
+}
+
+.login-msg {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+}

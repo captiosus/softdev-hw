@@ -1,0 +1,51 @@
+{% extends "master.html" %}
+
+{% block body %}
+<h1>{{profile_user}}</h1>
+<br>
+<h2>Posts</h2>
+{% for blogitem in blogitems %}
+  {% if (loop.index % 2) == 1 %}
+    <div class="row blog-row">
+  {% endif %}
+  <div class="col-md-6 col-sm-12 blog-post">
+    <h3 class="blog-title text-center">{{blogitem.title}}</h3>
+    <h6 class="blog-writer text-center">Written by <a href="#">{{blogitem.username}}</a> on {{blogitem.date}}</h6>
+
+    <p class="blog-text">{{blogitem.blogtext}}</p>
+    <div class ="see-more-contain">
+      <form action="/post/{{blogitem.postid}}">
+        <button class="see-more">see more</button>
+      </form>
+    </div>
+  </div>
+  {% if (loop.index % 2) == 0 %}
+    </div>
+    <hr class="hrline">
+  {% endif %}
+  {% if loop.last %}
+    {% if (loop.index % 2) == 1 %}
+      </div>
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+  <h2>Comments</h2>
+  <div class='row comment-row'>
+    {% for comment in comments %}
+    <div class="col-md-3">
+      <h6 class="comment-user"><a href="#">{{comment.username}}</a></h6>
+      <h6>{{comment.date}}</h6>
+    </div>
+    <div class="col-md-9">
+      <div class="comment">
+	{{comment.commenttext}}
+      </div>
+    </div>
+    <a href="/post/{{comment.postid}}">see context</a>
+    <hr>
+    {% endfor %}
+  </div>
+  <hr>
+
+{% endblock %}
